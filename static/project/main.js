@@ -91,7 +91,7 @@ function prevClick(){
         contentsTopic.querySelector('p').style.display="flex";
         contentsTopic.querySelector('p').innerHTML="왼쪽의 카테고리를 선택하세요.";
     }
-    else if(contentsAnalysis.style.display=="flex"){
+    else if(contentsAnalysis.stylebtn-nextprev.display=="flex"){
         titAnalysis.style.display="none";
         contentsAnalysis.style.display="none";
         contentsUpload.style.display="block";
