@@ -103,37 +103,7 @@ function prevClick(){
 
 }
 
-function topicBigClick(e) {
-    
-    for(var i=0; i<topicBigs.length; i++){
-        topicBigs[i].style.backgroundColor = "rgba(0,0,0,0)";
-    }
-    e.target.style.backgroundColor = "rgba(256, 256, 256, 0.25)";
-    
-    if(e.target.innerHTML=="친구"){
-      contentsTopic.querySelector('p').style.display="none";
-      topicSmall.style.display="flex";
-    }
-    else{
-      topicSmall.style.display="none";
-      contentsTopic.querySelector('p').style.display="flex";
-      contentsTopic.querySelector('p').innerHTML="친구 카테고리를 눌러보세요!";
-    }
 
-    obj.big = e.target.innerHTML;
-}
-
-function topicSmallClick(e) {
-    
-    for(var i=0; i<topicSmalls.length; i++){
-        topicSmalls[i].style.backgroundColor = "rgba(0,0,0,0)";
-    }
-    if(e.target.tagName=="TD")
-      e.target.style.backgroundColor = "rgba(256, 256, 256, 0.25)";
-
-    obj.small = e.target.innerHTML;
-    console.log(obj);
-}
 
 
 

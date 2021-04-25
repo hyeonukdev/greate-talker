@@ -73,11 +73,10 @@ nav i{
     background-color: rgba(256,256,256,0.25);
     transition: all 0.3s;
 }
-
 /* topic-contents */
 .contents-topic{
     color: #6f6f6f;
-    display: none;
+    display: flex;
 }
 
 .topic-big,

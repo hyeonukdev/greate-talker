@@ -19,4 +19,20 @@
             <tr><td>친구와 오늘 무엇을 하며 놀았나요?</td></tr>
         </table>
     </div>
+
+    <!--multiple을 쓰면 다 보여주고 없으면 드롭다운으로 선택할 수 있음-->
+    <!--키워드로 css select 꾸미기 찾아보면 될듯-->
+    <select name="mainCategory" style="width:200px" multiple>
+        <option value="">전체</option>
+    </select>
+
+    <i class="fas fa-caret-right"></i>
+
+    <select name="subCategory" style="width:200px" multiple>
+        <option value="">전체</option>
+    </select>
+
+
+    <script src="{% static 'topic/topic.js' %}" ></script>
+
 {% endblock %}

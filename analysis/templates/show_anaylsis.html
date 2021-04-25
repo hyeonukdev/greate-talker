@@ -2,5 +2,24 @@
 {% load static %}
 
 {% block content %}
-analysis
+    <div class="tit-analysis">
+        <span>Your text</span>
+        <span>Frequency</span>
+    </div>
+    <div class="contents-analysis">
+        <div class="usertext">
+            어 저의 가장 친한 친구는 냐옹이에요. <br><br>
+            음 길가다 우연히 마주쳤어요. <br><br>
+            완전 운명인 것 같았는데... <br><br>
+            음 지나고 보니 아니었던 것 같아요. <br><br>
+        </div>
+        <div class="frequency">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <div class="btn-nextprev">
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+        <button class="save">Save</button>
+    </div>
 {% endblock %}
