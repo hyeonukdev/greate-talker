@@ -171,7 +171,6 @@ button:hover{
 .contents-analysis{
     display: flex;
     height: 18rem;
-    display: none;
 }
 
 .usertext,

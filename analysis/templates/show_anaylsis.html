@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block header %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+{% endblock %}
+
 {% block content %}
     <div class="tit-analysis">
         <span>Your text</span>
@@ -22,4 +26,6 @@
         <button class="next">Next</button>
         <button class="save">Save</button>
     </div>
+
+    <script src="{% static 'analysis/analysis.js' %}" ></script>
 {% endblock %}
