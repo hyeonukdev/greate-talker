@@ -132,6 +132,7 @@ nav i{
     padding: 5rem 0;
     text-align: center;
     color: #6f6f6f;
+    display: none;
 }
 
 button:hover{
