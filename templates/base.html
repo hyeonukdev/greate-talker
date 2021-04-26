@@ -21,11 +21,11 @@
 </head>
 <body>
     <nav>
-        <p class="logo">GREATE TALKER!!!!</p>
+        <p class="logo"><a href="{% url 'index' %}">GREATE TALKER!!!!</a></p>
         <div class="nav-bar">
-            <p>Topic</p>
-            <p>Upload</p>
-            <p>Analysis</p>
+            <p><a href="{% url 'topic:topic' %}">Topic</a></p>
+            <p><a href="{% url 'voice:voice' %}">Voice</a></p>
+            <p><a href="{% url 'analysis:analysis' %}">Analysis</a></p>
             <i class="fas fa-bars fa-lg"></i>
         </div>
     </nav>
