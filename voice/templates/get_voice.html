@@ -17,5 +17,10 @@
         </div>
     </div>
 
+    <div class="btn-nextprev">
+        <button class="prev"><a href="{% url 'topic:topic' %}">Prev</a></button>
+        <button class="next"><a href="{% url 'analysis:analysis' %}">Next</a></button>
+    </div>
+
     <script src="{% static 'voice/voice.js' %}" ></script>
 {% endblock %}
