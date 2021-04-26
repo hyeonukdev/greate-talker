@@ -32,6 +32,11 @@
         <option value="">전체</option>
     </select>
 
+    <div class="btn-nextprev">
+        <button class="prev"><a href="{% url 'index' %}">Prev</a></button>
+        <button class="next"><a href="{% url 'voice:voice' %}">Next</a></button>
+    </div>
+
     <script src="{% static 'topic/topic.js' %}" ></script>
 
 {% endblock %}
