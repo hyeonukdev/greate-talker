@@ -73,11 +73,10 @@ nav i{
     background-color: rgba(256,256,256,0.25);
     transition: all 0.3s;
 }
-
 /* topic-contents */
 .contents-topic{
     color: #6f6f6f;
-    display: none;
+    display: flex;
 }
 
 .topic-big,
@@ -97,7 +96,6 @@ nav i{
 
 .topic-small{
     width: 70%;
-    display: none;
 }
 
 .topic-small td{
@@ -107,7 +105,7 @@ nav i{
 
 .topic-big tr:hover,
 .topic-small tr:hover{
-    cursor: pointer;
+    /*cursor: pointer;*/
     background-color: rgba(256,256,256,0.25);
 }
 
@@ -132,7 +130,6 @@ nav i{
     padding: 5rem 0;
     text-align: center;
     color: #6f6f6f;
-    display: none;
 }
 
 button:hover{
@@ -173,7 +170,6 @@ button:hover{
 .contents-analysis{
     display: flex;
     height: 18rem;
-    display: none;
 }
 
 .usertext,
@@ -198,7 +194,6 @@ button:hover{
     display: flex;
     width: auto;
     margin-top: 5rem;
-    display: none;
 }
 
 .prev,
@@ -219,7 +214,7 @@ button:hover{
 }
 
 .save{
-    display: none;
+    /*display: none;*/
 }
 
 
@@ -229,4 +224,43 @@ button:hover{
     cursor: pointer;
     background-color: rgba(256,256,256,0.25);
     transition: all 0.3s;
+}
+
+/* a-style */
+ a {color: #fff; text-decoration: none; outline: none}
+ a:hover, a:active {text-decoration: none; color:#fff; background-color:#f59000;}
+
+ a {
+    all: unset;
+}
+
+/* for hide scroll bar */
+select{
+    scrollbar-width: none; /*For Firefox*/;
+    -ms-overflow-style: none;  /*For Internet Explorer 10+*/;
+    scroll:none;
+    border:none;
+    scrollbar-base-color: #FFF;
+    scrollbar-face-color: #FFF;
+    scrollbar-arrow-color: #FFF;
+    scrollbar-3dlight-color: #FFF;
+    scrollbar-highlight-color:#FFF;
+    scrollbar-shadow-color: #FFF;
+    scrollbar-darkshadow-color: #FFF;
+    scrollbar-track-color: #FFF;
+}
+
+select:-webkit-scrollbar { /*For WebKit Browsers*/
+    width: 0;
+    height: 0;
+}
+.visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
 }

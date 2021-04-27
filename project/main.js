@@ -229,63 +229,7 @@ function topicSmallClick(e) {
     console.log(obj);
 }
 
-// file drag and drop
-// selecting all required elements
-const dropArea = contentsUpload.querySelector('.upload-file'),
-dragText = dropArea.querySelector("p"),
-button = dropArea.querySelector('.select-file'),
-input = dropArea.querySelector("input");
-let file; //this is a global variable and we'll use it inside multiple functions
 
-button.onclick = ()=>{
-  input.click(); //if user click on the button then the input also clicked
-}
-
-input.addEventListener("change", function(){
-  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
-  file = this.files[0];
-  
-  dropArea.parentElement.classList.add("active");
-  showFile(); //calling function
-});
-
-
-//If user Drag File Over DropArea
-dropArea.addEventListener("dragover", (event)=>{
-  event.preventDefault(); //preventing from default behaviour
-  dropArea.parentElement.classList.add("active");
-  dragText.textContent = "Release to Upload File";
-});
-
-//If user leave dragged File from DropArea
-dropArea.addEventListener("dragleave", ()=>{
-  dropArea.parentElement.classList.remove("active");
-  dragText.textContent = "Drag & Drop to Upload File";
-});
-
-//If user drop File on DropArea
-dropArea.addEventListener("drop", (event)=>{
-  event.preventDefault(); //preventing from default behaviour
-  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
-  file = event.dataTransfer.files[0];
-  showFile(); //calling function
-});
-
-function showFile(){
-  let fileType = file.type; //getting selected file type
-  //console.log(fileType);
-  let validExtensions = ["audio/x-m4a", "audio/wav"]; //adding some valid audio extensions in array "audio/x-m4a"
-  if(validExtensions.includes(fileType)){ //if user selected file is an audio file
-    let filename = '<p class="uploadfile">'+file.name+'</p>'; //creating an audio file name
-    dropArea.parentElement.innerHTML = filename; //adding that created audio file name inside dropArea container
-  }else{
-    alert("This is not an audio File!");
-    
-    console.log(fileType);
-    dropArea.classList.remove("active");
-    dragText.textContent = "Drag & Drop to Upload File";
-  }
-}
 
 // chart
 var ctx = document.getElementById('myChart'); 
