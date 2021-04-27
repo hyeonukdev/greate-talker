@@ -229,3 +229,38 @@ button:hover{
 /* a-style */
  a {color: #fff; text-decoration: none; outline: none}
  a:hover, a:active {text-decoration: none; color:#fff; background-color:#f59000;}
+
+ a, button {
+    all: unset;
+}
+
+/* for hide scroll bar */
+select{
+    scrollbar-width: none; /*For Firefox*/;
+    -ms-overflow-style: none;  /*For Internet Explorer 10+*/;
+    scroll:none;
+    border:none;
+    scrollbar-base-color: #FFF;
+    scrollbar-face-color: #FFF;
+    scrollbar-arrow-color: #FFF;
+    scrollbar-3dlight-color: #FFF;
+    scrollbar-highlight-color:#FFF;
+    scrollbar-shadow-color: #FFF;
+    scrollbar-darkshadow-color: #FFF;
+    scrollbar-track-color: #FFF;
+}
+
+select:-webkit-scrollbar { /*For WebKit Browsers*/
+    width: 0;
+    height: 0;
+}
+.visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
